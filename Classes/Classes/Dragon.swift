@@ -9,4 +9,8 @@ class Dragon: Enemy {
     override func move() {
         print("Flying")
     }
+    override func attack() {
+        super.attack()
+        print("Spits fire, does \(attackStrength) damage")
+    }
 }
